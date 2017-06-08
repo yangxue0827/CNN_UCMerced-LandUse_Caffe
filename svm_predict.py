@@ -24,20 +24,20 @@ print X_train.shape, y_train.shape, X_test.shape, y_test.shape
 # X_train, _, y_train, _ = train_test_split(
 #     X_train, y_train, test_size=0.8, random_state=42)
 
-pca = PCA()
-pca.fit(X_train.T)
-EVR_List = pca.explained_variance_ratio_
-Dim = 0
-temp = 0.0
-for j in range(len(EVR_List)):
-    temp += EVR_List[j]
-    if temp >= 0.90:
-        Dim = j
-        print Dim
-        break
-pca = PCA(n_components=Dim, copy=True, whiten=False)
-X_train = pca.fit(X_train).components_.T
-X_test = pca.fit(X_test).components_.T
+# pca = PCA()
+# pca.fit(X_train.T)
+# EVR_List = pca.explained_variance_ratio_
+# Dim = 0
+# temp = 0.0
+# for j in range(len(EVR_List)):
+#     temp += EVR_List[j]
+#     if temp >= 0.90:
+#         Dim = j
+#         print Dim
+#         break
+# pca = PCA(n_components=Dim, copy=True, whiten=False)
+# X_train = pca.fit(X_train).components_.T
+# X_test = pca.fit(X_test).components_.T
 
 print("Fitting the classifier to the training set")
 t0 = time()
