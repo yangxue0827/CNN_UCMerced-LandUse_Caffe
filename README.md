@@ -21,7 +21,7 @@ ubuntu14.04 + caffe + python（数据划分和增强在用windows10的3.5，其�
   svm_vision.py---对svm模型进行可视化分析tsne.py---对数据进行降维可视化    
 
 # 参考博客   
-1、caffe制作数据：
+1、caffe制作数据：   
 http://www.cnblogs.com/taokongcn/p/4341371.html     
 2、caffe微调：   
 http://blog.csdn.net/FlyYoung0709/article/details/71173016    
